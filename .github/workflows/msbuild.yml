@@ -36,6 +36,7 @@ jobs:
         dir
         dir ..\
         dir project
+        dir project\HelloWorld
       
 
 
