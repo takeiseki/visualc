@@ -37,6 +37,7 @@ jobs:
         dir ..\
         dir project
         dir project\HelloWorld
+        dir project\HelloWorld\Debug
         dir project\HelloWorld\HelloWorld
         dir project\HelloWorld\x64
         
