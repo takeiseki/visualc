@@ -29,7 +29,7 @@ jobs:
       uses: microsoft/setup-msbuild@v1.0.2
 
     - name: build app
-      run: msbuild project\HelloWorld\HelloWorld\YourProjectFile.vcxproj -t:rebuild -verbosity:diag -property:Configuration=Release
+      run: msbuild project\HelloWorld\HelloWorld\HelloWorld.vcxproj -t:rebuild -verbosity:diag -property:Configuration=Release
 
 
 # working-directory: ${{env.GITHUB_WORKSPACE}}
