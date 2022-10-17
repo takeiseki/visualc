@@ -1,12 +1,12 @@
 name: MSBuild
 
 on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   workflow_dispatch:
 
+#  push:
+#    branches: [ "main" ]
+#  pull_request:
+#    branches: [ "main" ]
 
 
 env:
@@ -38,9 +38,12 @@ jobs:
       run: |
         dir project\HelloWorld\x64\Debug
         cd project\HelloWorld\x64\Debug
-        Start-Process -FilePath "HelloWorld.exe"
+        HelloWorld.exe
       shell: cmd
-        
+
+
+#        Start-Process -FilePath "HelloWorld.exe"
+
 #        $p = New-Object System.Diagnostics.Process
 #        $p.StartInfo.FileName = "D:\a\visualc\visualc\project\HelloWorld\x64\Debug\HelloWorld.exe" 
 #        $p.StartInfo.Arguments = ""
