@@ -47,5 +47,3 @@ jobs:
       # See https://docs.microsoft.com/visualstudio/msbuild/msbuild-command-line-reference
 #      run: msbuild /m /p:Configuration=HelloWorld HelloWorld
 
-     - name: exec Hello World
-       run: dir
