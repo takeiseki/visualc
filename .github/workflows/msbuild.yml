@@ -24,20 +24,18 @@ permissions:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2019
+
+#    runs-on: windows-latest
+
 
     steps:
     - uses: actions/checkout@v3
 
-#    - name: Add MSBuild to PATH
-#      uses: microsoft/setup-msbuild@v1.0.2
-#      with:
-#        vs-version: '16.4'
-
     - name: Add MSBuild to PATH
-      uses: microsoft/setup-msbuild
+      uses: microsoft/setup-msbuild@v1.0.2
       with:
-        vs-version: 16.4
+        vs-version: '16.4'
 
 
 
