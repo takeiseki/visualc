@@ -43,6 +43,7 @@ jobs:
         dir project\HelloWorld
         dir project\HelloWorld\HelloWorld
         dir project\HelloWorld\x64
+        dir project\HelloWorld\x64\Debug
         
       
 
