@@ -49,4 +49,3 @@ jobs:
 
      - name: exec Hello World
        run: dir
-       run: dir ..\
