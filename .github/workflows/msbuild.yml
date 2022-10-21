@@ -1,14 +1,11 @@
 name: MSBuild
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-  workflow_dispatch:
-
-
-
 
 env:
   # Path to the solution file relative to the root of the project.
@@ -24,9 +21,12 @@ permissions:
 
 jobs:
   build:
-    runs-on: windows-2019
+#    run visual studio 2022 env
+    runs-on: windows-latest
 
-#    runs-on: windows-latest
+#    run visual studio 2019 env
+#    runs-on: windows-2019
+
 
 
     steps:
@@ -34,8 +34,10 @@ jobs:
 
     - name: Add MSBuild to PATH
       uses: microsoft/setup-msbuild@v1.0.2
-      with:
-        vs-version: '16.4'
+
+#     select visual studio 2019 env
+#      with:
+#        vs-version: '16.4'
 
 
 
